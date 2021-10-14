@@ -1,0 +1,203 @@
+.tooltip-section {
+   margin: 0px 0px 80px 0px;
+}
+.tooltip-body {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, 126px);
+   grid-gap: 32px;
+   @media(max-width: 767px) {
+      justify-content: center;
+   }
+}
+.tooltip {
+   padding: 7px 10px;
+   margin: 0px 0px 25px 0px;
+   border-radius: 4px;
+   font-size: 14px;
+   color: var(--bright);
+   text-align: center;
+   position: relative;
+   &:last-of-type {
+      margin: 0px 0px 0px 0px;
+   }
+   &::before {
+      content: '';
+      display: block;
+      position: absolute;
+   }
+   &--bright {
+      background-color: var(--bright);
+      color: var(--secondary);
+      &.tooltip--top {
+         &::before {
+            background: url(../img/elements/tooltip/bright-top.svg) no-repeat;
+         }
+      }
+      &.tooltip--right {
+         &::before {
+            background: url(../img/elements/tooltip/bright-right.svg) no-repeat;
+         }
+      }
+      &.tooltip--bottom {
+         &::before {
+            background: url(../img/elements/tooltip/bright-bottom.svg) no-repeat;
+         }
+      }
+      &.tooltip--left {
+         &::before {
+            background: url(../img/elements/tooltip/bright-left.svg) no-repeat;
+         }
+      }
+   }
+   &--primary {
+      background-color: var(--primary);
+      &.tooltip--top {
+         &::before {
+            background: url(../img/elements/tooltip/primary-top.svg) no-repeat;
+         }
+      }
+      &.tooltip--right {
+         &::before {
+            background: url(../img/elements/tooltip/primary-right.svg) no-repeat;
+         }
+      }
+      &.tooltip--bottom {
+         &::before {
+            background: url(../img/elements/tooltip/primary-bottom.svg) no-repeat;
+         }
+      }
+      &.tooltip--left {
+         &::before {
+            background: url(../img/elements/tooltip/primary-left.svg) no-repeat;
+         }
+      }
+   }
+   &--accent {
+      background-color: var(--accent);
+      &.tooltip--top {
+         &::before {
+            background: url(../img/elements/tooltip/accent-top.svg) no-repeat;
+         }
+      }
+      &.tooltip--right {
+         &::before {
+            background: url(../img/elements/tooltip/accent-right.svg) no-repeat;
+         }
+      }
+      &.tooltip--bottom {
+         &::before {
+            background: url(../img/elements/tooltip/accent-bottom.svg) no-repeat;
+         }
+      }
+      &.tooltip--left {
+         &::before {
+            background: url(../img/elements/tooltip/accent-left.svg) no-repeat;
+         }
+      }
+   }
+   &--warning {
+      background-color: var(--warning);
+      &.tooltip--top {
+         &::before {
+            background: url(../img/elements/tooltip/warning-top.svg) no-repeat;
+         }
+      }
+      &.tooltip--right {
+         &::before {
+            background: url(../img/elements/tooltip/warning-right.svg) no-repeat;
+         }
+      }
+      &.tooltip--bottom {
+         &::before {
+            background: url(../img/elements/tooltip/warning-bottom.svg) no-repeat;
+         }
+      }
+      &.tooltip--left {
+         &::before {
+            background: url(../img/elements/tooltip/warning-left.svg) no-repeat;
+         }
+      }
+   }
+   &--success {
+      background-color: var(--success);
+      &.tooltip--top {
+         &::before {
+            background: url(../img/elements/tooltip/success-top.svg) no-repeat;
+         }
+      }
+      &.tooltip--right {
+         &::before {
+            background: url(../img/elements/tooltip/success-right.svg) no-repeat;
+         }
+      }
+      &.tooltip--bottom {
+         &::before {
+            background: url(../img/elements/tooltip/success-bottom.svg) no-repeat;
+         }
+      }
+      &.tooltip--left {
+         &::before {
+            background: url(../img/elements/tooltip/success-left.svg) no-repeat;
+         }
+      }
+   }
+   &--error {
+      background-color: var(--error);
+      &.tooltip--top {
+         &::before {
+            background: url(../img/elements/tooltip/error-top.svg) no-repeat;
+         }
+      }
+      &.tooltip--right {
+         &::before {
+            background: url(../img/elements/tooltip/error-right.svg) no-repeat;
+         }
+      }
+      &.tooltip--bottom {
+         &::before {
+            background: url(../img/elements/tooltip/error-bottom.svg) no-repeat;
+         }
+      }
+      &.tooltip--left {
+         &::before {
+            background: url(../img/elements/tooltip/error-left.svg) no-repeat;
+         }
+      }
+   }
+   &--top {
+      &::before {
+         width: 10px;
+         height: 5px;
+         top: -4px;
+         left: 50%;
+         transform: translateX(-50%);
+      }
+   }
+   &--right{
+      &::before {
+         width: 5px;
+         height: 10px;
+         top: 50%;
+         right: -4px;
+         transform: translateY(-50%);
+      }
+   }
+   &--bottom {
+      &::before {
+         width: 10px;
+         height: 5px;
+         bottom: -4px;
+         left: 50%;
+         transform: translateX(-50%);
+      }
+   }
+   &--left {
+      &::before {
+         width: 5px;
+         height: 10px;
+         top: 50%;
+         left: -4px;
+         transform: translateY(-50%);
+      }
+   }
+}

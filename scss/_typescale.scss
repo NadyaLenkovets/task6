@@ -1,0 +1,124 @@
+.typescale-body {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, 385px);
+   column-gap: 80px;
+   row-gap: 60px;
+   @media(max-width: 991px) {
+      grid-template-columns: repeat(auto-fit, 300px);
+      column-gap: 40px;
+      row-gap: 60px;
+   }
+   @media(max-width: 767px) {
+      justify-content: center;
+      text-align: center;
+   }
+}
+.typescale-block {
+   &--primary {
+      color: var(--primary);
+   }
+   &--secondary {
+      color: var(--secondary);
+   }
+   &--muted {
+      color: var(--muted);
+   }
+   &--accent {
+      color: var(--accent);
+   }
+   &--warning {
+      color: var(--warning);
+   }
+   &--success {
+      color: var(--success);
+   }
+   &--error {
+      color: var(--error);
+   }
+   &--bright {
+      color: var(--bright);
+   }
+}
+.typescale-block__item {
+   margin: 0px 0px 49px 0px;
+
+}
+.typescale-block__h1 {
+   font-size: 72px;
+   line-height: 1.2;
+   font-weight: 600;
+   @media(max-width: 991px) {
+      font-size: 48px;
+   }
+   @media(max-width: 565px) {
+      font-size: 40px;
+   }
+}
+.typescale-block__h2 {
+   font-size: 64px;
+   line-height: 1.19;
+   font-weight: 600;
+   @media(max-width: 991px) {
+      font-size: 44px;
+   }
+   @media(max-width: 565px) {
+      font-size: 36px;
+   }
+}
+.typescale-block__h3 {
+   font-size: 56px;
+   line-height: 1.21;
+   font-weight: 600;
+   @media(max-width: 991px) {
+      font-size: 40px;
+   }
+   @media(max-width: 565px) {
+      font-size: 30px;
+   }
+}
+.typescale-block__h4 {
+   font-size: 34px;
+   line-height: 1.3;
+   font-weight: 600;
+   @media(max-width: 991px) {
+      font-size: 36px;
+   }
+   @media(max-width: 565px) {
+      font-size: 24px;
+   }
+}
+.typescale-block__h5 {
+   font-size: 28px;
+   line-height: 1.29;
+   font-weight: 600;
+   @media(max-width: 991px) {
+      font-size: 32px;
+   }
+   @media(max-width: 565px) {
+      font-size: 18px;
+   }
+}
+.typescale-block__h6 {
+   font-size: 20px;
+   line-height: 28px;
+   font-weight: 600;
+   @media(max-width: 991px) {
+      font-size: 18px;
+   }
+   @media(max-width: 565px) {
+      font-size: 16px;
+   }
+}
+.typescale-block__p1 {
+   font-size: 16px;
+   line-height: 22px;
+}
+.typescale-block__p2 {
+   font-size: 14px;
+   line-height: 20px;
+}
+.typescale-block__label {
+   margin: 0px 0px 0px 0px;
+   font-size: 12px;
+   line-height: 18px;
+}

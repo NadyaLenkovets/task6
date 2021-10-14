@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+   <html lang="en">
+
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Task6 - Components-2</title>
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+      <link rel="stylesheet" href="css/style.css">
+   </head>
+
+   <body>
+      <div class="wrapper">
+         <section class="charts-section">
+            <h2 class="title"><span>16.</span> Charts</h2>
+            <div class="charts-body">
+               <div class="charts__item charts__item--1">
+                  <h5 class="chart-name">Bar Chart</h5>
+                  <div class="chart-content--1">
+                     <h3 class="chart__title">443K Pageviews</h3>
+                     <h4 class="chart__subtitle">in last 7 days</h4>
+                     <div class="chart__wrapper chart__wrapper--1">
+                        <canvas id="myChart1"></canvas>
+                     </div>
+                  </div>
+               </div>
+               <div class="charts__item charts__item--2">
+                  <h5 class="chart-name">Line Chart</h5>
+                  <div class="chart-content">
+                     <h3 class="chart__title">984 Signups</h3>
+                     <h4 class="chart__subtitle">in last 7 days</h4>
+                     <div class="chart__wrapper chart__wrapper--2">
+                        <canvas id="myChart2"></canvas>
+                     </div>
+                  </div>
+               </div>
+               <div class="charts__item charts__item--3">
+                  <h5 class="chart-name">Donut Chart</h5>
+                  <div class="chart-content">
+                     <h3 class="chart__title">Sale Channels</h3>
+                     <h4 class="chart__subtitle">in last 7 days</h4>
+                     <div class="chart__wrapper chart__wrapper--3">
+                        <canvas id="myChart3"></canvas>
+                     </div>
+                     <p class="chart__result">Mobile and Web Channels are performing better.</p>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <section class="cards-section">
+            <h2 class="title"><span>17.</span> Cards</h2>
+            <div class="cards-body--top">
+               <div class="cards__item cards__item--1">
+                  <div class="cards__image">
+                     <img src="img/components/cards/Image1.svg" alt="">
+                  </div>
+                  <h4 class="cards__title cards__title">Card Title</h4>
+                  <p class="cards__text cards__text">Supporting description for the card goes here like a breeze.</p>
+                  <div class="cards__buttons">
+                     <button class="btn btn--cards btn--medium btn--bright">Action</button>
+                  </div>
+               </div>
+               <div class="cards__item cards__item--2">
+                  <h4 class="cards__title cards__title cards__title--bright">Card Title</h4>
+                  <p class="cards__text cards__text cards__text--bright">Supporting description for the card goes here like a breeze.</p>
+                  <div class="cards__more">
+                     <img src="img/components/cards/More.svg" alt="">
+                  </div>
+               </div>
+               <div class="cards__item cards__item--3">
+                  <h4 class="cards__title cards__title">Card Title</h4>
+                  <p class="cards__text cards__text">Supporting description for the card goes here like a breeze.</p>
+                  <div class="cards__buttons">
+                     <button class="btn btn--cards btn--medium btn--bright">Action</button>
+                  </div>
+               </div>
+            </div>
+            <div class="cards-body--bottom">
+               <div class="cards__item cards__item--primary cards__item--color">
+                  <p class="cards__label">Label</p>
+                  <h4 class="cards__title cards__title cards__title--bright">Card Title</h4>
+                  <p class="cards__text cards__text cards__text--bright">Supporting description for the card goes here like a breeze.</p>
+                  <div class="cards__more">
+                     <img src="img/components/cards/More.svg" alt="">
+                  </div>
+               </div>
+               <div class="cards__item cards__item--accent cards__item--color">
+                  <p class="cards__label">Label</p>
+                  <h4 class="cards__title cards__title cards__title--bright">Card Title</h4>
+                  <p class="cards__text cards__text cards__text--bright">Supporting description for the card goes here like a breeze.</p>
+                  <div class="cards__more">
+                     <img src="img/components/cards/More.svg" alt="">
+                  </div>
+               </div>
+               <div class="cards__item cards__item--warning cards__item--color">
+                  <p class="cards__label">Label</p>
+                  <h4 class="cards__title cards__title cards__title--bright">Card Title</h4>
+                  <p class="cards__text cards__text cards__text--bright">Supporting description for the card goes here like a breeze.</p>
+                  <div class="cards__more">
+                     <img src="img/components/cards/More.svg" alt="">
+                  </div>
+               </div>
+               <div class="cards__item cards__item--success cards__item--color">
+                  <p class="cards__label">Label</p>
+                  <h4 class="cards__title cards__title cards__title--bright">Card Title</h4>
+                  <p class="cards__text cards__text cards__text--bright">Supporting description for the card goes here like a breeze.</p>
+                  <div class="cards__more">
+                     <img src="img/components/cards/More.svg" alt="">
+                  </div>
+               </div>
+               <div class="cards__item cards__item--error cards__item--color">
+                  <p class="cards__label">Label</p>
+                  <h4 class="cards__title cards__title cards__title--bright">Card Title</h4>
+                  <p class="cards__text cards__text cards__text--bright">Supporting description for the card goes here like a breeze.</p>
+                  <div class="cards__more">
+                     <img src="img/components/cards/More.svg" alt="">
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <section class="forms-section">
+            <h2 class="title"><span>18.</span> Forms</h2>
+            <div class="forms-body">
+               <div class="forms__item forms__item--1">
+                  <h3 class="forms__title">Contact us</h3>
+                  <p class="forms__text forms__text--margin">In general, our team replies within 24-28 hours.</p>
+                  <form action="#" class="form1">
+                     <div class="form1__item">
+                        <label class="form-label" for="form1__name">Name</label>
+                        <input type="text" class="text-field-input form1__input" id="form1__name">
+                     </div>
+                     <div class="form1__item">
+                        <label class="form-label" for="form1__email">Email</label>
+                        <input type="email" class="text-field-input form1__input" id="form1__email">
+                     </div>
+                     <div class="form1__item">
+                        <label class="form-label" for="form1__textarea">Message or Query</label>
+                        <textarea name="form1__textarea" class="form1__textarea textarea"></textarea>
+                     </div>
+                     <div class="form1__buttons">
+                        <button class="btn btn--large btn--accent" type="submit">Send Message</button>
+                     </div>
+                  </form>
+               </div>
+               <div class="forms-block">
+                  <div class="forms__column">
+                     <div class="forms__item forms__item--2">
+                        <h3 class="forms__title">Sign in</h3>
+                        <p class="forms__text">Don't have an account yet?</p>
+                        <a href="#" class="forms__link forms__link--margin">Sign up now</a>
+                        <form action="#" class="form2">
+                           <div class="form2__item">
+                              <label class="form-label" for="form2__name">Name</label>
+                              <input type="text" class="text-field-input form2__input" id="form2__name">
+                           </div>
+                           <div class="form2__item">
+                              <label class="form-label" for="form2__email">Email</label>
+                              <input type="email" class="text-field-input form2__input" id="form2__email">
+                           </div>
+                           <div class="form2__buttons">
+                              <button class="btn btn--large btn--accent btn--form2" type="submit">Sign In</button>
+                           </div>
+                           <a href="#" class="forms__link">Forgot password?</a>
+                        </form>
+                     </div>
+                     <div class="forms__item forms__item--4">
+                        <h3 class="forms__title">Reset Password</h3>
+                        <p class="forms__text">Enter your email for a password reset link.</p>
+                        <a href="#" class="forms__link forms__link--margin">Forgot Email?</a>
+                        <form action="#" class="form4">
+                           <div class="form4__item">
+                              <label class="form-label" for="form4__email">Email</label>
+                              <input type="email" class="text-field-input form4__input" id="form4__email">
+                           </div>
+                           <div class="form4__buttons">
+                              <button class="btn btn--large btn--accent btn--form2" type="submit">Send Reset Link</button>
+                           </div>
+                           <a href="#" class="forms__link">Forgot password?</a>
+                        </form>
+                     </div>
+                  </div>
+                  
+                  <div class="forms__column">
+                     <div class="forms__item forms__item--3">
+                        <h3 class="forms__title">Create an account</h3>
+                        <p class="forms__text">Already have an account?</p>
+                        <a href="#" class="forms__link forms__link--margin">Sign in</a>
+                        <form action="#" class="form3">
+                           <div class="form3__item">
+                              <label class="form-label" for="form3__name">Full name</label>
+                              <input type="text" class="text-field-input form3__input" id="form3__name">
+                           </div>
+                           <div class="form3__item">
+                              <label class="form-label" for="form3__email">Email</label>
+                              <input type="email" class="text-field-input form3__input" id="form3__email">
+                           </div>
+                           <div class="form3__item">
+                              <label class="form-label" for="form3__pass">Password</label>
+                              <input type="password" class="text-field-input form3__input" id="form3__pass">
+                           </div>
+                           <div class="form__agree">
+                              <input type="checkbox" class="form__checkbox" id="agree">
+                              <label for="agree" class="agree__label">By signing up, I agree to the terms.</label>
+                           </div>
+                           <div class="form3__buttons">
+                              <button class="btn btn--large btn--accent btn--form3" type="submit">Sign Up</button>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </div> 
+
+
+      <div class="main-header">
+         <div class="main-header__nav main-nav">
+            <ul class="main-nav__list">
+               <li class="main-nav__item">
+                  <a href="index.html" class="main-nav__link">Styleguide</a>
+               </li>
+               <li class="main-nav__item">
+                  <a href="controls.html" class="main-nav__link">Controls</a>
+               </li>
+               <li class="main-nav__item">
+                  <a href="elements.html" class="main-nav__link">Elements</a>
+               </li>
+               <li class="main-nav__item">
+                  <a href="components1.html" class="main-nav__link">Components-1</a>
+               </li>
+               <li class="main-nav__item">
+                  <a href="components2.html" class="main-nav__link">Components-2</a>
+               </li>
+            </ul>
+         </div>
+         <div class="main-header__burger">
+            <span></span>
+            <div class="main-header__burger-bg"></div>
+         </div>
+      </div>
+
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.js"></script>
+      <script src="js/charts.js"></script>
+      <script src="js/script.js"></script>
+   </body>
+
+   </html>

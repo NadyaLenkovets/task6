@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+   <html lang="en">
+
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Task6 - Controls</title>
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+      <link rel="stylesheet" href="css/choices.min.css">
+      <link rel="stylesheet" href="css/style.css">
+   </head>
+
+   <body>
+
+      <svg style="display: none;">
+
+         <symbol id="plus" viewBox="0 0 31 30">
+            <g>
+               <path fill-rule="evenodd" clip-rule="evenodd" d="M15.5 7C14.9477 7 14.5 7.44772 14.5 8V14H8.5C7.94772 14 7.5 14.4477 7.5 15C7.5 15.5523 7.94772 16 8.5 16H14.5V22C14.5 22.5523 14.9477 23 15.5 23C16.0523 23 16.5 22.5523 16.5 22V16H22.5C23.0523 16 23.5 15.5523 23.5 15C23.5 14.4477 23.0523 14 22.5 14H16.5V8C16.5 7.44772 16.0523 7 15.5 7Z"/>
+               <mask id="mask0" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="7" y="7" width="17" height="16">
+               <path fill-rule="evenodd" clip-rule="evenodd" d="M15.5 7C14.9477 7 14.5 7.44772 14.5 8V14H8.5C7.94772 14 7.5 14.4477 7.5 15C7.5 15.5523 7.94772 16 8.5 16H14.5V22C14.5 22.5523 14.9477 23 15.5 23C16.0523 23 16.5 22.5523 16.5 22V16H22.5C23.0523 16 23.5 15.5523 23.5 15C23.5 14.4477 23.0523 14 22.5 14H16.5V8C16.5 7.44772 16.0523 7 15.5 7Z"/>
+            </g>
+         </symbol>
+         <symbol id="minus" viewBox="0 0 31 30">
+            <g>
+               <path d="M8.5 16C7.94772 16 7.5 15.5523 7.5 15C7.5 14.4477 7.94772 14 8.5 14H22.5C23.0523 14 23.5 14.4477 23.5 15C23.5 15.5523 23.0523 16 22.5 16H8.5Z"/>
+               <mask id="mask0" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="7" y="14" width="17" height="2">
+               <path d="M8.5 16C7.94772 16 7.5 15.5523 7.5 15C7.5 14.4477 7.94772 14 8.5 14H22.5C23.0523 14 23.5 14.4477 23.5 15C23.5 15.5523 23.0523 16 22.5 16H8.5Z"/>
+            </g>
+         </symbol>
+      </svg>
+
+
+      <div class="wrapper">
+         <section class="form-section">
+            <h2 class="title"><span>04.</span> Form</h2>
+            <div class="text-fields__body">
+               <div class="text-fields__item text-field">
+                  <label class="form-label" for="text-field-input--1">Label</label>
+                  <input type="text" placeholder="Placeholder" class="text-field-input text-field-input--1" id="text-field-input1">
+                  <p class="text-field__message text-field__message--error">Validation error message</p>
+               </div>
+               <div class="text-fields__item text-field">
+                  <label class="form-label" for="text-field-input--2">Label</label>
+                  <input type="text" value="Value" class="text-field-input text-field-input--2" id="text-field-input2">
+                  <p class="text-field__message text-field__message--success">Validation success message</p>
+               </div>
+            </div>
+            <div class="text-fields__body">
+               <div class="text-fields__item text-field">
+                  <label class="form-label" for="text-field-input--3">Label</label>
+                  <input type="text" value="Value" class="text-field-input text-field-input--3 error" id="text-field-input3">
+                  <p class="text-field__message text-field__message--error">Validation error message</p>
+               </div>
+               <div class="text-fields__item text-field">
+                  <label class="form-label" for="text-field-input--4">Label</label>
+                  <input type="text" value="Value" class="text-field-input text-field-input--4" id="text-field-input4" disabled>
+                  <p class="text-field__message text-field__message--error">Validation error message</p>
+               </div>
+            </div>
+            <div class="text-fields-actions__body">
+               <div class="text-fields__item text-field">
+                  <label class="form-label" for="text-field-input--5">Label</label>
+                  <input type="text" placeholder="Placeholder" class="text-field-input text-field-input--5" id="text-field-input5">
+               </div>
+               <div class="text-fields__item text-field">
+                  <label class="form-label" for="text-field-input--6">Label</label>
+                  <input type="text" value="Value" class="text-field-input text-field-input--6" id="text-field-input6">
+                  <p class="text-field__message text-field__message--success">Validation success message</p>
+               </div>
+               <div class="text-fields__item text-field">
+                  <label class="form-label" for="text-field-input--7">Label</label>
+                  <input type="text" value="Value" class="text-field-input text-field-input--7 error" id="text-field-input7">
+                  <p class="text-field__message text-field__message--error">Validation error message</p>
+               </div>
+            </div>
+            <div class="dropdown-body">
+               <div class="dropdown__item">
+                  <label class="dropdown__label" for="dropdown1">Label</label>
+                  <select name="dropdown1" id="dropdown1" class="dropdown">
+                     <option value="">Dropdown</option>
+                     <option value="Item">Item</option>
+                     <option value="Item">Item</option>
+                     <option value="Item">Item</option>
+                     <option value="Item">Item</option>
+                  </select>
+               </div>
+               <div class="dropdown__item">
+                  <label class="dropdown__label" for="dropdown3">Label</label>
+                  <select name="dropdown3" id="dropdown3" class="dropdown" disabled>
+                     <option value="Item">Dropdown</option>
+                     <option value="Item">Item</option>
+                     <option value="Item">Item</option>
+                     <option value="Item">Item</option>
+                     <option value="Item">Item</option>
+                  </select>
+               </div>
+            </div>
+            <div class="textarea__body">
+               <div class="textarea-item">
+                  <label class="form-label" for="textarea--1">Label</label>
+                  <textarea type="text" placeholder="Placeholder" class="textarea textarea--1" id="textarea--1" name="textarea--1"></textarea>
+                  <p class="text-field__message text-field__message--error">Validation error message</p>
+               </div>
+               <div class="textarea-item">
+                  <label class="form-label" for="textarea--2">Label</label>
+                  <textarea type="text" class="textarea textarea--2" id="textarea--2" name="textarea--2">Value</textarea>
+                  <p class="text-field__message text-field__message--error">Validation error message</p>
+               </div>
+            </div>
+            <div class="textarea__body">
+               <div class="textarea-item">
+                  <label class="form-label" for="textarea--2">Label</label>
+                  <textarea type="text" class="textarea textarea--2 error" id="textarea--2" name="textarea--2">Value</textarea>
+                  <p class="text-field__message text-field__message--error">Validation error message</p>
+               </div>
+               <div class="textarea-item">
+                  <label class="form-label" for="textarea--2">Label</label>
+                  <textarea type="text" class="textarea textarea--2" id="textarea--2" name="textarea--2" disabled>Value</textarea>
+                  <p class="text-field__message text-field__message--error">Validation error message</p>
+               </div>
+            </div>
+            <div class="stepper__body">
+               <div class="stepper__item stepper">
+                  <button class="stepper-button stepper-button--minus">
+                     <svg class="minus-button__icon">
+                        <use xlink:href="#minus"></use>
+                     </svg>
+                  </button>
+                  <button class="stepper-value" type="number">01</button>
+                  <button class="stepper-button stepper-button--plus">
+                     <svg class="plus-button__icon">
+                        <use xlink:href="#plus"></use>
+                     </svg>
+                  </button>
+               </div>
+               <div class="stepper__item stepper">
+                  <button class="stepper-button stepper-button--minus" disabled>
+                     <svg class="minus-button__icon">
+                        <use xlink:href="#minus"></use>
+                     </svg>
+                  </button>
+                  <button class="stepper-value" type="number" disabled>01</button>
+                  <button class="stepper-button stepper-button--plus active" disabled>
+                     <svg class="plus-button__icon">
+                        <use xlink:href="#plus"></use>
+                     </svg>
+                  </button>
+               </div>
+            </div>
+            <div class="checkboxes__body">
+               <div class="checkboxes__item checkboxes__item--1">
+                  <input class="checkbox checkbox--check" type="checkbox" id="checkbox2">
+                  <label class="checkboxes__label" for="checkbox2">Label</label>
+               </div>
+               <div class="checkboxes__item checkboxes__item--2">
+                  <input class="checkbox checkbox--check" type="checkbox" id="checkbox5" checked  disabled>
+                  <label class="checkboxes__label" for="checkbox5">Label</label>
+               </div>
+               <div class="checkboxes__item checkboxes__item--3">
+                  <input class="checkbox checkbox--minus" type="checkbox" id="checkbox3">
+                  <label class="checkboxes__label" for="checkbox3">Label</label>
+               </div>
+               <div class="checkboxes__item  checkboxes__item--4">
+                  <input class="checkbox checkbox--minus" type="checkbox" id="checkbox6" checked  disabled>
+                  <label class="checkboxes__label" for="checkbox6">Label</label>
+               </div>
+            </div>
+            <div class="radio__body">
+               <div class="radio__item">
+                  <input type="radio" class="radio" id="radio1">
+                  <label for="radio1" class="radio__label"><span></span>Label</label>
+               </div>
+               <div class="radio__item  radio__item--3">
+                  <input type="radio" class="radio" id="radio3" disabled>
+                  <label for="radio3" class="radio__label"><span></span>Label</label>
+               </div>
+            </div>
+            <div class="switch__body">
+               <div class="switch__item">
+                  <input type="checkbox" class="switch" id="switch1">
+                  <label for="switch1" class="switch__label">Label</label>
+               </div>
+               <div class="switch__item switch__item--3">
+                  <input type="checkbox" class="switch" id="switch2" disabled>
+                  <label for="switch2" class="switch__label">Label</label>
+               </div>
+            </div>
+            <div class="range-body">
+               <div class="range__item">
+                  <input class="range" type="range" min="0" max="100" value="70">
+               </div>
+               <div class="range__item">
+                  <input class="range" type="range" min="0" max="100" value="25" disabled>
+               </div>
+            </div>
+            <div class="tag-body">
+               <div class="tag__item">
+                  <label class="tag__label tag__label--bright">Label</label>
+               </div>
+               <div class="tag__item">
+                  <label class="tag__label tag__label--primary">Label</label>
+               </div>
+               <div class="tag__item">
+                  <label class="tag__label tag__label--accent">Label</label>
+               </div>
+               <div class="tag__item">
+                  <label class="tag__label tag__label--warning">Label</label>
+               </div>
+               <div class="tag__item">
+                  <label class="tag__label tag__label--success">Label</label>
+               </div>
+               <div class="tag__item">
+                  <label class="tag__label tag__label--error">Label</label>
+               </div>
+            </div>
+            <div class="small-buttons__body">
+                <!--  =================  small bright  =================   -->
+               <div class="small-buttons__item">
+                  <button class="btn btn--small btn--bright">Button</button>
+               </div>
+               <div class="small-buttons__item">
+                  <button class="btn btn--small btn--bright" disabled>Button</button>
+               </div>
+
+                <!--  =================  small accent  =================   -->
+               <div class="small-buttons__item">
+                  <button class="btn btn--small btn--accent">Button</button>
+               </div>
+               <div class="small-buttons__item">
+                  <button class="btn btn--small btn--accent" disabled>Button</button>
+               </div>
+
+               <!--  =================  small ghost  =================   -->
+               <div class="small-buttons__item">
+                  <button class="btn btn--small btn--ghost">Button</button>
+               </div>
+               <div class="small-buttons__item">
+                  <button class="btn btn--small btn--ghost" disabled>Button</button>
+               </div>
+            </div>
+
+            <div class="medium-buttons__body">
+
+               <!--  =================  medium bright  =================   -->
+               <div class="medium-buttons__item">
+                  <button class="btn btn--medium btn--bright">Button</button>
+               </div>
+               <div class="medium-buttons__item">
+                  <button class="btn btn--medium btn--bright" disabled>Button</button>
+               </div>
+
+               <!--  =================  medium accent  =================   -->
+               <div class="medium-buttons__item">
+                  <button class="btn btn--medium btn--accent">Button</button>
+               </div>
+               <div class="medium-buttons__item">
+                  <button class="btn btn--medium btn--accent" disabled>Button</button>
+               </div>
+
+               <!--  =================  medium ghost  =================   -->
+               <div class="medium-buttons__item">
+                  <button class="btn btn--medium btn--ghost">Button</button>
+               </div>
+               <div class="medium-buttons__item">
+                  <button class="btn btn--medium btn--ghost" disabled>Button</button>
+               </div>
+            </div>
+
+            <div class="large-buttons__body">
+
+               <!--  =================  large bright  =================   -->
+               <div class="large-buttons__item">
+                  <button class="btn btn--large btn--bright">Button</button>
+               </div>
+               <div class="large-buttons__item">
+                  <button class="btn btn--large btn--bright" disabled>Button</button>
+               </div>
+
+               <!--  =================  large accent  =================   -->
+               <div class="large-buttons__item">
+                  <button class="btn btn--large btn--accent">Button</button>
+               </div>
+               <div class="large-buttons__item">
+                  <button class="btn btn--large btn--accent" disabled>Button</button>
+               </div>
+
+               <!--  =================  large ghost  =================   -->
+               <div class="large-buttons__item">
+                  <button class="btn btn--large btn--ghost">Button</button>
+               </div>
+               <div class="large-buttons__item">
+                  <button class="btn btn--large btn--ghost" disabled>Button</button>
+               </div>
+            </div>
+            <div class="alert__body">
+               <div class="alert__item alert__item--bright">
+                  A bright alert flash for dark backgrounds, which never lose the contrast.
+               </div>
+               <div class="alert__item alert__item--primary">
+                  A dark alert flash for bright backgrounds, which never lose the contrast.
+               </div>
+               <div class="alert__item alert__item--accent">
+                  A primary alert flash that looks pretty nice.
+               </div>
+               <div class="alert__item alert__item--warning">
+                  A warning alert flash that never sucks.
+               </div>
+               <div class="alert__item alert__item--success">
+                  A success alert flash, which never lose the contrast.
+               </div>
+               <div class="alert__item alert__item--error">
+                  An error alert flash that nobody loves.
+               </div>
+            </div>
+            <div class="bars-body">
+               <div class="bar bar--accent"></div>
+               <div class="bar bar--warning"></div>
+               <div class="bar bar--success"></div>
+               <div class="bar bar--error"></div>
+            </div>
+            <div class="spinners-body">
+               <div class="spinner spinner--accent"></div>
+               <div class="spinner spinner--warning"></div>
+               <div class="spinner spinner--success"></div>
+               <div class="spinner spinner--error"></div>
+            </div>
+         </section>
+      </div>
+      
+      
+      <div class="main-header">
+         <div class="main-header__nav main-nav">
+            <ul class="main-nav__list">
+               <li class="main-nav__item">
+                  <a href="index.html" class="main-nav__link">Styleguide</a>
+               </li>
+               <li class="main-nav__item">
+                  <a href="controls.html" class="main-nav__link">Controls</a>
+               </li>
+               <li class="main-nav__item">
+                  <a href="elements.html" class="main-nav__link">Elements</a>
+               </li>
+               <li class="main-nav__item">
+                  <a href="components1.html" class="main-nav__link">Components-1</a>
+               </li>
+               <li class="main-nav__item">
+                  <a href="components2.html" class="main-nav__link">Components-2</a>
+               </li>
+            </ul>
+         </div>
+         <div class="main-header__burger">
+            <span></span>
+            <div class="main-header__burger-bg"></div>
+         </div>
+      </div>
+
+
+      <script src="js/choices.min.js"></script>
+      <script src="js/controls.js"></script>
+      <script src="js/script.js"></script>
+   </body>
+
+   </html>
